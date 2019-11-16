@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# next.js build output
+.next
+
 # Mac files
 .DS_Store
 
