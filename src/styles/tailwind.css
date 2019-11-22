@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -6,7 +8,10 @@
  *
  * @import "tailwindcss/base";
  */
+
+/* eslint-disable no-use-before-define */
 @tailwind base;
+/* eslint-enable no-use-before-define */
 
 /**
    * This injects any component classes registered by plugins.
@@ -41,4 +46,24 @@
    *
    * @import "tailwindcss/utilities";
    */
+
+.btn {
+  @apply inline-block px-5 py-3 shadow-lg rounded-lg bg-indigo-500 text-sm text-white uppercase tracking-wider font-semibold;
+}
+.btn:hover {
+  @apply bg-indigo-400;
+}
+.btn:focus {
+  @apply outline-none shadow-outline;
+}
+.btn:active {
+  @apply bg-indigo-600;
+}
+
+@screen sm {
+  .btn {
+    @apply text-base;
+  }
+}
+
 @tailwind utilities;

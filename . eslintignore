@@ -1,0 +1,8 @@
+src/styles/tailwind.css
+
+# Dependency directories
+node_modules/
+
+# gatsby files
+.cache/
+public

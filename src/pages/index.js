@@ -32,7 +32,7 @@ export default () => {
         <div className="mt-4 sm:mt-6">
           <a
             href="#top"
-            className="inline-block px-5 py-3 shadow-lg rounded-lg bg-indigo-500 text-sm text-white uppercase tracking-wider font-semibold sm:text-base"
+            className="inline-block px-5 py-3 shadow-lg rounded-lg bg-indigo-500 hover:bg-indigo-400 md:hover:bg-green-400 active:bg-indigo-600 focus:outline-none focus:shadow-outline text-sm text-white uppercase tracking-wider font-semibold sm:text-base"
           >
             Book your escape
           </a>
